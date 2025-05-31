@@ -29,10 +29,8 @@ This project is ideal for powering a real estate portal, rental platform, or as 
 ### 📦 Install Dependencies
 
 ```bash
-npm install -r requirements.txt
+npm install
 ```
-
-These variables configure the database, authentication, and Redis caching.
 
 ### 🗃 Import CSV Data into MongoDB
 
@@ -131,7 +129,7 @@ Authorization: Bearer <token>
 
 **Example:**
 
-```
+```http
 GET /properties?location=Delhi&priceMin=60000&bedrooms=2
 ```
 
@@ -166,7 +164,7 @@ All `/properties` filters also apply to `/favorites`.
 
 ```json
 {
-  "recipientEmail": "jane@example.com", // must be registered
+  "recipientEmail": "jane@example.com",
   "propertyId": "64e6a48c1a23aa5a..."
 }
 ```
@@ -192,7 +190,7 @@ You can deploy this server on:
 - Railway
 - Vercel (with adaptation for serverless if needed)
 
-Ensure to configure your `.env` in deployment settings.
+Ensure to configure your `.env` variables in the deployment settings.
 
 ---
 
